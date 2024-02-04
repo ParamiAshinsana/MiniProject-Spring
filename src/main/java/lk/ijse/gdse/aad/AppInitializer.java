@@ -8,5 +8,6 @@ public class AppInitializer {
         var ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
+        ctx.close();
     }
 }
